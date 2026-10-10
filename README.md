@@ -8,7 +8,7 @@ Entwicklungszeit 4 Doppelstunden (Unterricht), allein umgesetzt.
 
 ---
 
-Worum geht es
+### Worum geht es
 
 Der Spieler steuert einen Bergarbeiter nach links und rechts. Von oben fallen
 Objekte mit unterschiedlicher Wirkung:
@@ -30,7 +30,7 @@ Punkte zu sammeln. Eine einzige Bombe beendet das Spiel.
 
 ## Technischer Aufbau
 
-Vererbungshierarchie
+### Vererbungshierarchie
 
 Alle fallenden Objekte erben von der Oberklasse `FallendesObjekt`, die
 `fallen()` und `istAmBoden()` bereitstellt. Die Unterklassen überschreiben
@@ -45,7 +45,7 @@ FallendesObjekt
 └── Magnet
 ```
 
-Drei Spielzustände
+### Drei Spielzustände
 
 Das Spiel wechselt zwischen drei `World`-Klassen:
 
@@ -56,7 +56,7 @@ IntroWelt  ──►  SpieleWelt  ──►  EndWelt
 Ergebnis und Punktzahl werden über den Konstruktor
 `EndWelt(boolean ergebnis, int punkte)` an die Endwelt übergeben.
 
-Spawn-System
+### Spawn-System
 
 `generiereObjekte()` erzeugt alle 25 Frames ein Objekt an einer zufälligen
 X-Position. Welcher Typ entsteht, entscheidet eine Zufallszahl zwischen 0 und
@@ -64,13 +64,13 @@ X-Position. Welcher Typ entsteht, entscheidet eine Zufallszahl zwischen 0 und
 Tabelle oben direkt einstellen. Jedes Objekt bekommt zusätzlich eine zufällige
 Fallgeschwindigkeit zwischen 3 und 7 Pixeln pro Frame.
 
-Animation
+### Animation
 
 Der Spieler-Sprite besteht aus fünf Einzelbildern, die alle sechs Frames
 wechseln. Die Blickrichtung wird über `mirrorHorizontally()` gespiegelt,
 statt einen zweiten Bildersatz vorzuhalten.
 
-Kapselung
+### Kapselung
 
 Die Punktzahl ist `private` und wird ausschließlich über
 `aenderePunkte(int anzahl)` verändert.
