@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Spieler
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=Spieler()
+comment3.params=
+comment3.target=void\ bewegeLinksRechts()
+comment4.params=
+comment4.target=void\ animiere()
+numComments=5

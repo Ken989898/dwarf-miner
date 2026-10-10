@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=SpieleWelt
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ SpieleWelt\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=SpieleWelt()
+comment2.params=
+comment2.target=void\ prepare()
+comment3.params=
+comment3.target=void\ act()
+comment4.params=anzahl
+comment4.target=void\ aenderePunkte(int)
+comment5.params=istGewonnen
+comment5.target=void\ beendeSpiel(boolean)
+comment6.params=
+comment6.target=void\ generiereObjekte()
+numComments=7

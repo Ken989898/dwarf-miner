@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=FallendesObjekt
+comment1.params=
+comment1.target=FallendesObjekt()
+comment2.params=
+comment2.target=void\ fallen()
+comment3.params=
+comment3.target=boolean\ istAmBoden()
+numComments=4
